@@ -1,0 +1,6 @@
+{
+  "name": "Interactive Portfolio",
+  "description": "A luxury cinematic multi-role portfolio system with dynamic role switching, multilingual support, project case studies, and detailed reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

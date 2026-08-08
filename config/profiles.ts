@@ -1,0 +1,88 @@
+import { ProfilePlatform } from '@/types';
+
+export const socialPlatforms: ProfilePlatform[] = [
+  {
+    id: 'soc-1',
+    name: 'LinkedIn',
+    category: 'social',
+    handle: '@kaiblade',
+    description: 'Main professional network for career updates, articles, and recommendations.',
+    url: 'https://linkedin.com/in/kaiblade',
+    iconName: 'Linkedin',
+  },
+  {
+    id: 'soc-2',
+    name: 'Twitter / X',
+    category: 'social',
+    handle: '@kaiblade_dev',
+    description: 'Tech thoughts, Next.js architecture tips, and AI paper breakdowns.',
+    url: 'https://twitter.com/kaiblade_dev',
+    iconName: 'Twitter',
+  },
+  {
+    id: 'soc-3',
+    name: 'Medium',
+    category: 'social',
+    handle: '@kaiblade.tech',
+    description: 'Long-form engineering blogs on microservices, React 19, and PyTorch.',
+    url: 'https://medium.com/@kaiblade.tech',
+    iconName: 'FileText',
+  },
+  {
+    id: 'soc-4',
+    name: 'Substack',
+    category: 'social',
+    handle: 'systems-and-ai.substack.com',
+    description: 'Weekly technical newsletter on full-stack web engineering & ML ops.',
+    url: 'https://substack.com',
+    iconName: 'Mail',
+  },
+];
+
+export const codingPlatforms: ProfilePlatform[] = [
+  {
+    id: 'code-1',
+    name: 'GitHub',
+    category: 'coding',
+    handle: '@kaiblade',
+    description: 'Open source repositories, Next.js templates, and machine learning pipelines.',
+    url: 'https://github.com/kaiblade',
+    iconName: 'Github',
+  },
+  {
+    id: 'code-2',
+    name: 'Kaggle',
+    category: 'coding',
+    handle: 'kaiblade_ai',
+    description: 'Kaggle Competitions Master — healthcare datasets & ML model benchmarks.',
+    url: 'https://kaggle.com/kaiblade_ai',
+    iconName: 'Database',
+  },
+  {
+    id: 'code-3',
+    name: 'LeetCode',
+    category: 'coding',
+    handle: 'kaiblade_319',
+    description: '500+ problems solved in Data Structures, Dynamic Programming, and Graph Algorithms.',
+    url: 'https://leetcode.com/kaiblade_319',
+    iconName: 'Code2',
+  },
+  {
+    id: 'code-4',
+    name: 'Codeforces',
+    category: 'coding',
+    handle: 'kai_blade',
+    description: 'Competitive programming contests & algorithmic problem solving.',
+    url: 'https://codeforces.com',
+    iconName: 'Terminal',
+  },
+  {
+    id: 'code-5',
+    name: 'HackerRank',
+    category: 'coding',
+    handle: 'kaiblade',
+    description: 'Gold Badges in Problem Solving, SQL, Python, and Functional Programming.',
+    url: 'https://hackerrank.com',
+    iconName: 'Cpu',
+  },
+];
