@@ -5,7 +5,7 @@ import { motion } from 'motion/react';
 import { usePortfolio } from '@/hooks/usePortfolioContext';
 import { resumesData } from '@/config/resumes';
 import { TargetRole } from '@/types';
-import { FileText, Video, Download, Sparkles, ExternalLink, Play, ChevronRight } from 'lucide-react';
+import { FileText, Video, Download, Sparkles, Play, ChevronRight } from 'lucide-react';
 
 export function ResumeSection() {
   const { portfolioMode, activeRole, setMode, setRole, showToast, t } = usePortfolio();
@@ -21,7 +21,7 @@ export function ResumeSection() {
 
   const handleDownloadTextResume = () => {
     window.open(targetDriveViewUrl, '_blank');
-    showToast('Opening Resume', 'Opening Google Drive resume document...', 'download');
+    showToast('Opening Resume PDF', 'Opening Google Drive resume document...', 'download');
   };
 
   const handleDownloadVideoResume = () => {
@@ -154,25 +154,6 @@ export function ResumeSection() {
               transition={{ duration: 0.3 }}
               className="p-3 sm:p-6 text-slate-300 space-y-4"
             >
-              {/* Document Info Banner & Direct Link */}
-              <div className="px-4 py-3 bg-[#070A10] border border-[#232D3F] rounded-xl text-xs text-purple-200 flex flex-wrap items-center justify-between gap-3">
-                <div className="flex items-center gap-2">
-                  <Sparkles className="w-4 h-4 text-purple-400 shrink-0" />
-                  <span className="text-xs sm:text-sm font-semibold text-white">
-                    Target Role PDF Resume: <strong className="text-purple-300 font-semibold">{currentResume.roleTitle}</strong>
-                  </span>
-                </div>
-                <a
-                  href={targetDriveViewUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-xs text-purple-300 hover:text-purple-200 font-semibold px-3 py-1.5 rounded-lg bg-purple-500/10 border border-purple-500/25 hover:bg-purple-500/20 transition-all shrink-0"
-                >
-                  <ExternalLink className="w-3.5 h-3.5 shrink-0" />
-                  <span>Open in Google Drive</span>
-                </a>
-              </div>
-
               {/* PDF / Document Viewer Frame */}
               <div className="relative w-full h-[520px] sm:h-[750px] rounded-xl overflow-hidden border border-[#232D3F] bg-[#070A10] shadow-inner">
                 <iframe

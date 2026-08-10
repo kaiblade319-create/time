@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+@layer utilities {
+  /* Hide scrollbars cleanly */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Custom dark themed scrollbars */
+  .custom-dark-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  .custom-dark-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-dark-scrollbar::-webkit-scrollbar-thumb {
+    background: #232D3F;
+    border-radius: 9999px;
+  }
+  .custom-dark-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #38BDF8;
+  }
+  .custom-dark-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #232D3F transparent;
+  }
+}
